@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(206, 240, 240);
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    
+  }
+
+  .nav {
+    
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 40px;
+    transition: .3s;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  header, footer {
+    background-color: rgba(34, 219, 172, 0.941);
+  }
+
+  footer {
+
+  }
