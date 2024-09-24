@@ -5,106 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="https://img.icons8.com/isometric/50/technology-items.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <header>
+        <div class="header__container">
           <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
             </ul>
           </nav>
         </div>
     </header>
-    <main class="main-container">
-      <div class="container">
-        <div class="profile" id="profile">
-            <h1>Oksana Bondareva</h1>
-            <h2>Junior Frontend Developer</h2>
-            <img width="250" src="assets/foto.png" alt="My foto">
+    <main>
+      <div class="main__container">
+        <h1>Oksana Bondareva</h1>
+         <h2>Junior Front-End Developer</h2>
+        <div class="contact-wrapper">
+          <div>
+              <img class="photo" src="assets/foto.png" alt="My foto">
+          </div>
+          <div class="contact-info" id="contacts">
+              <h2>Contact information</h2>
+              <ul>
+                  <li>📲 Phone: +375297410807</li>
+                  <li>📧 E-mail: oksana20-89@mail.ru</li>
+                  <li>
+                    <img class="icon-social-network" src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000" alt="telegram icon">
+                     Telegram: @oksbond1
+                  </li>
+                  <li>
+                    <img class="icon-social-network" src="https://img.icons8.com/?size=100&id=i8BEpwdORP90&format=png&color=000000" alt="discord icon">
+                     Discord: Oksana-bondareva
+                  </li>
+              </ul>
+          </div>
         </div>
-        <section class="section" id="contacts">
-            <h2>Contact information</h2>
-            <ul>
-                <li>Phone: +375297410807</li>
-                <li>E-mail: oksana20-89@mail.ru</li>
-                <li>Telegram: @oksbond1</li>
-                <li>Discord: Oksana-bondareva</li>
-            </ul>
-        </section>
         <section class="section" id="summary">
             <h2>Summary</h2>
-            <p class="summary">I'm a switcher who is changing his life and field of activity for web-development. I wish to be a full-stack JavaScript developer, but currently I'm discovering frontend first. My main goal is to help people and their businesses to resolve problems on the web.</p>
+            <p class="summary">"I am an enthusiastic and quick-learning Software Developer with a strong foundation in JavaScript and React. Passionate about web development and eager to contribute to innovative projects. Seeking an opportunity to apply my skills and grow within a dynamic team environment."</p>
         </section>
-        <section class="section" id="skills">
-            <h2>My skills</h2>
-            <ol>
-                <li>JavaScript Basics</li>
-                <li>HTML/CSS</li>
-                <li>Git, GitHub</li>
-                <li>VS Code</li>
-            </ol>
+        <section class="skills" id="skills">
+          <div>
+              <h2>Hard skills</h2>
+              <ul>
+                  <li>✔ JavaScript</li>
+                  <li>✔ Typescript</li>
+                  <li>✔ HTML/CSS</li>
+                  <li>✔ Sass</li>
+                  <li>✔ Git, GitHub</li>
+                  <li>✔ VS Code</li>
+                  <li>✔ React, Redux</li>
+                  <li>✔ Next.js</li>
+              </ul>
+          </div>
+          <div>
+            <h2>Soft skills</h2>
+            <ul>
+                <li>➤ Self-Discipline</li>
+                <li>➤ Teamwork</li>
+                <li>➤ Problem-Solving</li>
+                <li>➤ Responsible</li>
+                <li>➤ Conscientious</li>
+                <li>➤ Goal-oriented</li>
+            </ul>
+        </div>
+          <div>
             <h2>English</h2>
             <p>A2</p>
+          </div>
         </section>
-        <section class="section" id="code">
-            <h2>Code example</h2>
-            <p class="kata">KATA from CODEWARS: * You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.</p>
-            <p class="kata">Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.</p>
-            <p class="kata">For example, when the input is green, output should be yellow.</p>
-            <pre class="code">
-                <code>
-                    function updateLight(current) {
-
-                    switch (current) {
-                      case 'green':
-                        return 'yellow';
-                        break;
-                      case 'yellow':
-                        return 'red';
-                        break;
-                      case 'red':
-                        return 'green';
-                        break;
-                      default:
-                        throw 'Error: wrong input';
-                        break;
-                    }
-                  }
-                </code>
-            </pre>
-            <h2>Study project CV</h2>
-            <a class="project" href="https://oksana-bondareva.github.io/rsschool-cv/">My CV</a>
+        <section id="projects">
+            <h2>My projects</h2>
+            <div class="projects__container">
+              <div class="project__card">
+                <div class="project__card_title">A light-weight versions of Postman and GrqphiQL combined in one app. React, Next.js, SPA</div>
+                <div class="project__button_wrapper">
+                  <a href="https://hooks-graphiql-app.netlify.app/ru" class="project__button_link" target="_blank">REST/GraphiQL Client</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Redux, Redux Toolkit, RTK Query, Context api. SPA</div>
+                <div class="project__button_wrapper">
+                  <a href="https://66a6838ec499826516ad4c8d--peaceful-croquembouche-9f8f92.netlify.app/" class="project__button_link" target="_blank">App state management</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">React Hook Form, Yup, Redux Toolkit and React Router. SPA</div>
+                <div class="project__button_wrapper">
+                  <a href="https://66c261c9f1bcf7ed530d5f41--phenomenal-centaur-dfda30.netlify.app/" class="project__button_link" target="_blank">React forms</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">A game using asynchronous requests on the 
+                  <a href="https://github.com/mikhama/async-race-api" target="_blank">api server</a>
+                  , Typescript and Webpack
+                </div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFE2023Q4/async-race/index.html" class="project__button_link" target="_blank">Async race</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">A game for making sentences from words in English, Typescript and Webpack</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFE2023Q4/rss-puzzle/index.html" class="project__button_link" target="_blank">English Puzzle</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Adaptive layout based on a Figma layout, vanilla JS</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFEPRESCHOOL2023Q2/library/" class="project__button_link" target="_blank">Library</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Adaptive layout based on a Figma layout, vanilla JS</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFE2023Q4/coffee-house/" class="project__button_link" target="_blank">Coffee-house</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Hangman game, vanilla JS</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFE2023Q4/hangman/" class="project__button_link" target="_blank">Hangman game</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Audio player, vanilla JS</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFEPRESCHOOL2023Q2/audio-player/" class="project__button_link" target="_blank">Audio player</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Image Galery, vanilla JS with api</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFEPRESCHOOL2023Q2/image-galery/" class="project__button_link" target="_blank">Image Galery</a>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card_title">Memory game, vanilla JS</div>
+                <div class="project__button_wrapper">
+                  <a href="https://rolling-scopes-school.github.io/oksana-bondareva-JSFEPRESCHOOL2023Q2/random-game/" class="project__button_link" target="_blank">Memory game</a>
+                </div>
+              </div>
+            </div>
         </section>
-        <section class="section" id="education">
-           <h2>Courses</h2>
-           <ul>
-              <li>Rolling Scopes School JS</li>
-              <li>Technical specialist of online schools</li>
-           </ul>
-           <h2>Education</h2>
-           <p>Belarusian-Russian University, economic</p>
+        <section class="education" id="education">
+          <div>
+            <h2>Courses</h2>
+            <ul>
+              <li>
+                ✔ Rolling Scopes School React 
+                </li>
+                <li class="certificate-wrapper">
+                  ✔ Rolling Scopes School JavaScript/Front-end: 
+                  <a class="certificate" href="https://app.rs.school/certificate/jfqh6gto" target="_blank">Certificate</a>
+                </li>
+                <li>✔ Technical specialist of online schools</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Education</h2>
+            <p>Belarusian-Russian University, economic</p>
+          </div>
         </section>
       </div>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <span>July 2023</span>
-        <a class="github-icon" href="https://github.com/Oksana-bondareva" target="_blank">
-            <img width="30" src="https://w7.pngwing.com/pngs/346/791/png-transparent-github-computer-icons-logo-repository-github-white-monochrome-head.png" alt="Github icon">
-            <span>Github</span>
+    <footer>
+      <div class="footer__container">
+        <a class="github-link__wrapper" href="https://github.com/Oksana-bondareva" target="_blank">
+            <img class="github-icon" src="https://w7.pngwing.com/pngs/346/791/png-transparent-github-computer-icons-logo-repository-github-white-monochrome-head.png" alt="Github icon">
+            <span class="github-title">Github</span>
         </a>
-        <a class="rs-icon" href="https://rs.school/js-stage0/" target="_blank">
-            <img width="100" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool icon">
-        </a>
+        <a class="github-link__wrapper" href="https://www.linkedin.com/in/oksana-bondareva-29686a299/" target="_blank">
+          <img class="github-icon" src="https://www.dtlsystems.ie/images/linkedIn.png" alt="LinkedIn icon">
+          <span class="github-title">LinkedIn</span>
+      </a>
     </div>
     </footer>
 </body>
