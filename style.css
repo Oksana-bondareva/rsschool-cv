@@ -239,3 +239,15 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (max-width: 1000px) {
+    html {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    html {
+      width: 100%;
+    }
+  }
